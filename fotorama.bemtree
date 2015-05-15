@@ -1,0 +1,26 @@
+block('fotorama')
+(
+    content()(function () {
+        var ctx = this.ctx;
+
+        var nconf = require('nconf');
+        var fs    = require('fs');
+
+        var galleryDir = '/' + ctx.dir + '/';
+        var itemsPath  = nconf.get('path:public') + galleryDir;
+
+        var items = fs.readdirSync(itemsPath);
+
+        items.sort(function (a, b) {
+            return parseInt(a) - parseInt(b);
+        });
+
+        return items.map(function (item) {
+
+            return {
+                elem : 'item',
+                url  : galleryDir + item
+            }
+        });
+    })
+);

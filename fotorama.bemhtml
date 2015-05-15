@@ -1,0 +1,19 @@
+block('fotorama')
+(
+    match(function () {
+
+        return this.ctx.hasOwnProperty('options')
+    })
+    (
+        attrs()(function() {
+            var attrs   = {};
+            var options = this.ctx.options;
+
+            for (var i in options) {
+                attrs['data-' + i] = options[i];
+            }
+
+            return attrs;
+        })
+    )
+);

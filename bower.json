@@ -1,0 +1,21 @@
+{
+  "name": "bem-fotorama",
+  "version": "1.0.0",
+  "authors": [
+    "4ok"
+  ],
+  "description": "Fotorama in BEM terms",
+  "main": [
+      "fotorama.css",
+      "fotorama.js"
+  ],
+  "keywords": [
+    "fotorama",
+    "bem"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/4ok/bem-fotorama",
+  "dependencies": {
+    "fotorama": "^4.6.4"
+  }
+}
