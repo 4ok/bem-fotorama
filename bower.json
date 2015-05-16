@@ -5,17 +5,10 @@
     "4ok"
   ],
   "description": "Fotorama in BEM terms",
-  "main": [
-      "fotorama.css",
-      "fotorama.js"
-  ],
   "keywords": [
     "fotorama",
     "bem"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/4ok/bem-fotorama",
-  "dependencies": {
-    "fotorama": "^4.6.4"
-  }
+  "homepage": "https://github.com/4ok/bem-fotorama"
 }
