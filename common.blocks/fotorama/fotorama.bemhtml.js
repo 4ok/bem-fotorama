@@ -1,13 +1,14 @@
 block('fotorama')
 (
     match(function () {
+        const ctx = this.ctx;
 
-        return this.ctx.hasOwnProperty('options')
+        return ctx.options
     })
     (
         attrs()(function() {
-            var attrs   = {};
-            var options = this.ctx.options;
+            const options = this.ctx.options;
+            let attrs     = {};
 
             for (var i in options) {
                 attrs['data-' + i] = options[i];

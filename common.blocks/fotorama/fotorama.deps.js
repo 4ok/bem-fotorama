@@ -1,7 +1,9 @@
 ({
     shouldDeps : [
         {
-            elems : ['item']
+            elems : [
+                'item'
+            ]
         }
     ]
 });
