@@ -1,12 +1,11 @@
-block('fotorama').elem('item')
-(
+block('fotorama').elem('item')(
+
     tag()('img'),
 
     attrs()(function () {
-        const ctx = this.ctx;
 
         return {
-            src: ctx.url
+            src: this.ctx.url
         }
     })
 );
