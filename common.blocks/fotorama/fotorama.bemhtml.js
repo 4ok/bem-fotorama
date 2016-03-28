@@ -1,15 +1,13 @@
-block('fotorama')
-    .match(function () {
-        return this.ctx.options
-    })(
-        attrs()(function() {
-            const options = this.ctx.options;
-            const attrs   = {};
+block('fotorama').match((ctx, bemjson) => bemjson.options)(
 
-            for (var i in options) {
-                attrs['data-' + i] = options[i];
-            }
+    attrs()((ctx, json) => {
+        const options = json.options;
+        const attrs   = {};
 
-            return attrs;
-        })
-    );
+        for (var i in options) {
+            attrs['data-' + i] = options[i];
+        }
+
+        return attrs;
+    })
+);

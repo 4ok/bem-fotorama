@@ -2,10 +2,10 @@ block('fotorama').elem('item')(
 
     tag()('img'),
 
-    attrs()(function () {
+    attrs()(ctx => {
 
         return {
-            src: this.ctx.url
+            src: ctx.ctx.url
         }
     })
 );
