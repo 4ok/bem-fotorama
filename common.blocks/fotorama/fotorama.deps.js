@@ -2,8 +2,8 @@
     shouldDeps : [
         {
             elems : [
-                'item'
-            ]
-        }
-    ]
+                'item',
+            ],
+        },
+    ],
 });
