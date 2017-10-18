@@ -1,7 +1,7 @@
 block('fotorama').match((ctx, bemjson) => bemjson.options)(
 
     attrs()((ctx, json) => {
-        const options = json.options;
+        const { options } = json;
 
         return Object
             .keys(options)
